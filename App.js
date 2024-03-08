@@ -1,12 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
-import Login from "./Authentication/login";
 import React from "react";
 
 export default function App() {
   return (
-    <View>
-      <Text>Lets Lunch</Text>
+    <View className="flex-1 justify-center items-center">
+      <Text className="font-bold">LetsLunch</Text>
       <StatusBar />
     </View>
   );
