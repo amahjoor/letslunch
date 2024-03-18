@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "225888613724",
+    "firebase_url": "https://let-s-lunch-default-rtdb.firebaseio.com",
+    "project_id": "let-s-lunch",
+    "storage_bucket": "let-s-lunch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225888613724:android:c75560117c906fe74b7d99",
+        "android_client_info": {
+          "package_name": "com.techforgood.letslunch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH7xgSp_fp6vNYQyPc9MMvI87Z37ft5l8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
