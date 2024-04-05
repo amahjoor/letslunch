@@ -1,11 +1,10 @@
 import { View, Text } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import react from 'react'
 
-export default function InstantLunch() {
+export default function ScheduleLunch() {
   return (
     <View className="flex-1 justify-center items-center">
-      <Text className="font-bold">Instant Lunch</Text>
+      <Text className="font-bold">Schedule Lunch</Text>
       <StatusBar />
     </View>
   )
