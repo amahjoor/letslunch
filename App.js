@@ -1,21 +1,22 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Home from './src/Screens/Home.js'
-import Account from './src/Screens/Account.js'
-import InstantLunch from './src/Screens/InstantLunch.js'
 import Profile from './src/Screens/Profile.js'
+import { createStackNavigator } from '@react-navigation/stack'
+import NavBar from './src/Components/NavBar.js'
+import ScheduleLunch from './src/Screens/ScheduleLunch.js'
 
 export default function App() {
-  const Tab = createBottomTabNavigator()
+  const Stack = createStackNavigator()
+
   return (
     <NavigationContainer>
-      <Tab.Navigator className="flex-1">
-        <Tab.Screen name={'Home'} component={Home} />
-        <Tab.Screen name={'Instant Lunch'} component={InstantLunch} />
-        <Tab.Screen name={'Profile'} component={Profile} />
-        <Tab.Screen name={'Account'} component={Account} />
-      </Tab.Navigator>
+      <Stack.Navigator className="flex-1">
+        <Stack.Screen name={'Home'} component={Home} />
+        <Stack.Screen name={'Schedule Lunch'} component={ScheduleLunch} />
+        <Stack.Screen name={'Profile'} component={Profile} />
+      </Stack.Navigator>
+      <NavBar />
     </NavigationContainer>
   )
 }

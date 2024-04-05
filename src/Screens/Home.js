@@ -1,12 +1,21 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import react from 'react'
+import { useNavigation } from '@react-navigation/native'
 
 export default function Home() {
+  const navigation = useNavigation()
+
+  const navigateToScreen = (screenName) => {
+    navigation.navigate(screenName)
+  }
+
   return (
     <View className="flex-1 justify-center items-center">
       <Text className="font-bold">LetsLunch</Text>
       <StatusBar />
+      <TouchableOpacity
+        onPress={() => navigateToScreen('Schedule Lunch')}
+      ><Text>Schedule Lunch!</Text></TouchableOpacity>
     </View>
   )
 }
