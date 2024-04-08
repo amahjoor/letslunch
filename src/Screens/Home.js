@@ -6,7 +6,7 @@ import ScheduleLunch from './ScheduleLunch'
 
 const Stack = createStackNavigator()
 
-function HomeScreen() {
+export default function Home() {
     const navigation = useNavigation()
 
     const navigateToScreen = (screenName) => {
@@ -23,14 +23,5 @@ function HomeScreen() {
                 <Text>Schedule Lunch!</Text>
             </TouchableOpacity>
         </View>
-    )
-}
-
-export default function Home() {
-    return (
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen name="ScheduleLunch" component={ScheduleLunch} />
-        </Stack.Navigator>
     )
 }
