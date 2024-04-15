@@ -14,8 +14,8 @@ export default function Home() {
     }
 
     return (
-        <View className="flex-1 justify-center items-center">
-            <Text className="font-bold">LetsLunch</Text>
+        <View>
+            <Text>LetsLunch</Text>
             <StatusBar />
             <TouchableOpacity
                 onPress={() => navigateToScreen('Schedule Lunch')}
