@@ -36,3 +36,5 @@ yarn-error.*
 
 #IDE specific
 .idea
+google-services.json
+GoogleService-Info.plist
